@@ -6,18 +6,17 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 12:10:18 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/22 13:22:47 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/22 15:40:05 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_POINT_H
 # define FT_POINT_H
 
-t_typedef	struct s_point
+typedef struct s_point
 {
-	intx;
-	inty;
-	t_point;
-}
+	int	x;
+	int	y;
+}	t_point;
 
 #endif
