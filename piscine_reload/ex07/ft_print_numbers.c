@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lesainz <lesainz@student.42madrid.com      +#+  +:+       +#+        */
+/*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 11:27:10 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/22 11:27:13 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/23 11:07:08 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_print_numbers(void)
 	num = '0';
 	while (num <= '9')
 	{
-		ft_puthcar(num);
+		ft_putchar(num);
 		num++;
 	}
 }

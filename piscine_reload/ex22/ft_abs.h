@@ -6,13 +6,13 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 12:06:50 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/22 15:47:13 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/23 11:37:22 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
 # define FT_ABS_H
 
-# define ABS(Value) (((1 - 2 * (Value) < 0)) * (Value))
+# define ABS(Value) ((Value < 0) ? (-Value) : (Value))
 
 #endif

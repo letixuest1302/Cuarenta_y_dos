@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 12:03:03 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/22 12:52:45 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/22 16:41:04 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strdup(char *src)
 /*
 int	main(void)
 {
-	const char	*original = "con Franco esto no pasaba";
+	const char	*original = "tenemos mucha hambre";
 	char	*duplicado;
 
 	printf("Original:  %s\n", original);
