@@ -3,11 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lesainz <lesainz@student.42madrid.com      +#+  +:+       +#+        */
+/*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:24:39 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/24 15:24:41 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/25 12:01:55 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_zero(void *s, size_t n)
+{
+	ft_memset(s, 0, n);
+}
