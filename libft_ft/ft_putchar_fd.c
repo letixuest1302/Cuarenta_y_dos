@@ -6,10 +6,13 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:32:56 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:31:07 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 16:00:15 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
