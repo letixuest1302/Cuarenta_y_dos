@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:26:54 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 11:31:29 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 12:31:27 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 /*escibe una cadena de texto (s) y un carácter que quiere buscar (c).
 Aunque c se pasa como un número entero (int), representa un carácter ASCII.*/
 #include "libft.h"
-#include <stddef.h>
 
 char	*ft_strchr(const char *str, int c)
 {

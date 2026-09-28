@@ -6,12 +6,11 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:25:59 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 11:30:19 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 12:31:38 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 size_t	ft_strcat(char *dest, const char *src, size_t destsize)
 {

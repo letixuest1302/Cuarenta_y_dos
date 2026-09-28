@@ -6,11 +6,10 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:33:13 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:13:10 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 12:31:18 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)
