@@ -6,11 +6,12 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:28:52 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 10:34:58 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 11:27:55 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
 
 int	ft_atoi(const char *str)
 {

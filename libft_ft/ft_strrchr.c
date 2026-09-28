@@ -6,11 +6,12 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:27:09 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/25 11:32:18 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 11:31:43 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stddef.h>
 
 char *ft_strrchr(const char *str, int c)
 {

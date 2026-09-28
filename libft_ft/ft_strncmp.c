@@ -6,11 +6,12 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:27:51 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/25 11:52:47 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 11:31:53 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stddef.h>
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {

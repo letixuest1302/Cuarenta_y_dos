@@ -6,11 +6,12 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:24:39 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/25 12:01:55 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 11:25:31 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stddef.h>
 
 void	ft_zero(void *s, size_t n)
 {

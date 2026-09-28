@@ -1,34 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/24 15:25:45 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 11:30:04 by lesainz          ###   ########.fr       */
+/*   Created: 2026/09/28 11:07:06 by lesainz           #+#    #+#             */
+/*   Updated: 2026/09/28 11:08:37 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
+#include <stdlib.h>
 
-size_t	ft_strcpy(char *dest, const char * src, size_t size)
+char	*ft_strdup(const char *s1)
 {
+	size_t	len;
+	char	*duplicate;
 	size_t	i;
-	size_t	src_len;
 
-	scr_len = 0;
-	while (src[src_len] != '\0')
-		src_len ++;
-	if (size == 0)
-		return (src_len);
+	len = 0;
+	while (s1[len] != '\0')
+		len++;
+
+	duplicate = (char *)malloc(sizeof(char) * (len + 1));
+	if (duplicate == NULL)
+		return (NULL);
+
+	// 3. Copiar carácter a carácter
 	i = 0;
-	while (src[i] != '\0' && i < (size - 1))
+	while (i < len)
 	{
-		dest[i] = src[i];
-		i ++;
+		duplicate[i] = s1[i];
+		i++;
 	}
-	dest[i] = '\0';
-	return (src_len);
+	duplicate[i] = '\0'; // Cerrar la cadena
+
+	return (duplicate);
 }
