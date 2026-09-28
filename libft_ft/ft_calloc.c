@@ -6,15 +6,13 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:29:36 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 11:46:16 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 12:15:56 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-void
-*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	void	*allocated_memory;
 	size_t	total_bytes;

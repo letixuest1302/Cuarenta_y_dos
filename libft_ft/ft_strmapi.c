@@ -3,11 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lesainz <lesainz@student.42madrid.com      +#+  +:+       +#+        */
+/*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:32:23 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/24 15:32:24 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 12:12:20 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

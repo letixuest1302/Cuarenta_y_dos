@@ -3,11 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lesainz <lesainz@student.42madrid.com      +#+  +:+       +#+        */
+/*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:32:39 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/24 15:32:40 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 12:12:45 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))

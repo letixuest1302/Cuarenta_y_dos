@@ -6,9 +6,10 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:32:03 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 11:36:31 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 12:16:10 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
+
+char	*ft_itoa(int n)

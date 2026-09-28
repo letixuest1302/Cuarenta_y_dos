@@ -3,11 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lesainz <lesainz@student.42madrid.com      +#+  +:+       +#+        */
+/*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:31:47 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/24 15:31:49 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 12:11:24 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+char	**ft_split(char const *s, char c)

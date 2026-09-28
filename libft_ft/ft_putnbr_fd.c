@@ -6,9 +6,10 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:33:40 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 11:29:34 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 12:15:13 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
+
+void	ft_putnbr_fd(int n, int fd)

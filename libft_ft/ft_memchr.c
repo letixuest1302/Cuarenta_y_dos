@@ -6,12 +6,11 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:28:05 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 11:25:59 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/28 12:16:31 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 void	*ft_memchr(const void *s, int c; size_t n)
 {
