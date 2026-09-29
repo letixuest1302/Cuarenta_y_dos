@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:33:40 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 10:50:06 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:09:09 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,11 @@ int	main(void)
 	// 1. Pruebas básicas en la salida estándar (fd = 1)
 	ft_putstr_fd("--- Pruebas en pantalla (fd = 1) ---\n", 1);
 	
-	ft_putstr_fd("Positivo: ", 1);
+	ft_putstr_fd("Positivo:", 1);
 	ft_putnbr_fd(42, 1);
 	ft_putchar_fd('\n', 1);
 
-	ft_putstr_fd("Negativo: ", 1);
+	ft_putstr_fd("Negativo:", 1);
 	ft_putnbr_fd(-42, 1);
 	ft_putchar_fd('\n', 1);
 
@@ -50,11 +50,11 @@ int	main(void)
 	ft_putchar_fd('\n', 1);
 
 	// 2. Pruebas con los límites de los enteros (INT_MIN y INT_MAX)
-	ft_putstr_fd("INT_MIN: ", 1);
+	ft_putstr_fd("INT_MIN:", 1);
 	ft_putnbr_fd(INT_MIN, 1);
 	ft_putchar_fd('\n', 1);
 
-	ft_putstr_fd("INT_MAX: ", 1);
+	ft_putstr_fd("INT_MAX:", 1);
 	ft_putnbr_fd(INT_MAX, 1);
 	ft_putchar_fd('\n', 1);
 
@@ -63,7 +63,7 @@ int	main(void)
 	if (fd != -1)
 	{
 		ft_putnbr_fd(1337, fd);
-		ft_putendl_fd(" -> Este numero fue escrito en un archivo.", fd);
+		ft_putendl_fd("Este numero fue escrito en un archivo.", fd);
 		close(fd);
 		ft_putstr_fd("\n¡Prueba de archivo 'test_putnbr.txt' completada con exito!\n", 1);
 	}

@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:26:39 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 13:29:36 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:02:38 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,11 @@ int	ft_tolower(int c)
 		return ( c + 32);
 	return (c);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    printf("ft_tolower('R'): %c (Esperado: 'r')\n", ft_tolower('r'));
+    return (0);
+}*/

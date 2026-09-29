@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:31:33 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 11:47:14 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:10:19 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,54 +36,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (trimmed);
 }
 /*
-int	main(void)
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
 {
-	char	*s1;
-	char	*set;
-	char	*result;
-
-	printf("=== Pruebas de ft_strtrim ===\n\n");
-
-	// Caso 1: Espacios al principio y al final
-	s1 = "   Hola Mundo   ";
-	set = " ";
-	result = ft_strtrim(s1, set);
-	printf("Original: [%s]\nSet:      [%s]\nTrimmed:  [%s]\n\n", s1, set, result);
-	free(result);
-
-	// Caso 2: Caracteres especiales (* y -)
-	s1 = "***¡Hola, Mundo!---***";
-	set = "*-";
-	result = ft_strtrim(s1, set);
-	printf("Original: [%s]\nSet:      [%s]\nTrimmed:  [%s]\n\n", s1, set, result);
-	free(result);
-
-	// Caso 3: Sin coincidencias que recortar
-	s1 = "Libft 42";
-	set = "xyz";
-	result = ft_strtrim(s1, set);
-	printf("Original: [%s]\nSet:      [%s]\nTrimmed:  [%s]\n\n", s1, set, result);
-	free(result);
-
-	// Caso 4: Todo se recorta (cadena vacía resultante)
-	s1 = "++++++";
-	set = "+";
-	result = ft_strtrim(s1, set);
-	printf("Original: [%s]\nSet:      [%s]\nTrimmed:  [%s] (Debe estar vacio)\n\n", s1, set, result);
-	free(result);
-
-	// Caso 5: Entradas NULL (protección)
-	result = ft_strtrim(NULL, "a");
-	if (result == NULL)
-		printf("Proteccion NULL en s1 pasada con exito (devuelve NULL).\n");
-	else
-		free(result);
-
-	result = ft_strtrim("abc", NULL);
-	if (result == NULL)
-		printf("Proteccion NULL en set pasada con exito (devuelve NULL).\n");
-	else
-		free(result);
-
-	return (0);
-} */
+    char *res = ft_strtrim("xxHello42xx", "x");
+    printf("ft_strtrim: %s (Esperado: Hello42)\n", res);
+    free(res);
+    return (0);
+}*/

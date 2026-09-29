@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:31:47 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 15:48:15 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:11:50 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,44 +88,28 @@ char	**ft_split(char const *s, char c)
 	return (fil_tab(tab, s, c));
 }
 /*
-int	main(void)
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
 {
-	char	**result;
-	int		i;
-
-	printf("PRUEBAS DE FT_SPLIT\n\n");
-
-	// 1. Prueba con una frase normal separada por espacios
-	printf("--- Prueba 1: 'Hola esto es un test de 42' ---\n");
-	result = ft_split("Hola esto es un test de 42", ' ');
-	i = 0;
-	while (result && result[i])
-	{
-		printf("result[%d] = [%s]\n", i, result[i]);
-		free(result[i]); // Liberamos cada palabra individual
-		i++;
-	}
-	free(result); // Liberamos el array principal de punteros
-
-	// 2. Prueba con delimitadores múltiples seguidos
-	printf("\n--- Prueba 2: ':::Hola::mundo::cruel::' (delimitador ':') ---\n");
-	result = ft_split(":::Hola::mundo::cruel::", ':');
-	i = 0;
-	while (result && result[i])
-	{
-		printf("result[%d] = [%s]\n", i, result[i]);
-		free(result[i]);
-		i++;
-	}
-	free(result);
-
-	// 3. Prueba con cadena vacía
-	printf("\n--- Prueba 3: Cadena vacia '' ---\n");
-	result = ft_split("", ' ');
-	if (result && result[0] == NULL)
-		printf("¡Exito! La cadena vacia devuelve un array con el puntero NULL.\n");
-	free(result);
-
-	return (0);
+    char **tab = ft_split("lorem*ipsum*dolor*sit", '*');
+    printf("ft_split[1]: %s (Esperado: ipsum)\n", tab[1]);
+    
+    // Liberación
+    for (int i = 0; tab[i]; i++)
+        free(tab[i]);
+    free(tab);
+    return (0);
+}int main(void)
+{
+    char **tab = ft_split("lorem*ipsum*dolor*sit", '*');
+    printf("ft_split[1]: %s (Esperado: ipsum)\n", tab[1]);
+    
+    // Liberación
+    for (int i = 0; tab[i]; i++)
+        free(tab[i]);
+    free(tab);
+    return (0);
+}
 }
 */

@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:25:59 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:31:38 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:07:19 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,13 @@ size_t	ft_strcat(char *dest, const char *src, size_t destsize)
 		
 	return (dst_len + src_len);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char dest[20] = "Hello";
+    size_t r = ft_strlcat(dest, " 42", sizeof(dest));
+    printf("ft_strlcat: %s (Retorno: %zu)\n", dest, r);
+    return (0);
+}*/

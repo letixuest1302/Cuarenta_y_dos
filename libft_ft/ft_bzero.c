@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:24:39 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:15:53 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:03:21 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,13 @@ void	ft_zero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char s[] = "123456";
+    ft_bzero(s, 3);
+    printf("ft_bzero bytes nulos aplicados en los primeros 3 caracteres\n");
+    return (0);
+}*/

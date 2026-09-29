@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:25:45 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:31:44 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:06:52 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,13 @@ size_t	ft_strcpy(char *dest, const char * src, size_t size)
 	dest[i] = '\0';
 	return (src_len);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char dest[10];
+    size_t r = ft_strlcpy(dest, "Hello", sizeof(dest));
+    printf("ft_strlcpy: %s (Retorno: %zu)\n", dest, r);
+    return (0);
+}*/

@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:28:36 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:32:10 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:06:17 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,11 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    printf("ft_strnstr: %s (Esperado: bar baz)\n", ft_strnstr("foo bar baz", "bar", 8));
+    return (0);
+}*/

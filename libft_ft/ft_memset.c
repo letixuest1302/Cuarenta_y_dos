@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:24:22 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:30:56 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:03:40 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,13 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char str[15] = "Hello World";
+    ft_memset(str, '.', 5);
+    printf("ft_memset: %s (Esperado: ..... World)\n", str);
+    return (0);
+}*/

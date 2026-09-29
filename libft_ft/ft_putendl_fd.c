@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:33:26 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 10:48:52 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:08:33 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,9 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putendl_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }
+/*
+int main(void)
+{
+    ft_putendl_fd("Línea con salto automático", 1);
+    return (0);
+}*/

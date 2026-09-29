@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:28:05 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:16:31 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:05:28 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,12 @@ void	*ft_memchr(const void *s, int c; size_t n)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char *res = ft_memchr("Hello 42", 'o', 8);
+    printf("ft_memchr: %s (Esperado: o 42)\n", res);
+    return (0);
+}*/

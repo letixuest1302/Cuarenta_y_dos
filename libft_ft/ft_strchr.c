@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:26:54 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:31:27 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:04:34 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,12 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)&str[i]);
 	return (NULL);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    printf("ft_strchr: %s (Esperado: rigor)\n", ft_strchr("rigor", 'r'));
+    return (0);
+}*/
 

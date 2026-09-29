@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:27:09 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:32:17 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:04:50 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,11 @@ char *ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    printf("ft_strrchr: %s (Esperado: r)\n", ft_strrchr("rigor", 'r'));
+    return (0);
+}*/

@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:25:30 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:31:01 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:04:08 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,14 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	}
 	return (dest);
 }
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    char data[] = "abcdef";
+    ft_memmove(data + 1, data, 4);
+    printf("ft_memmove: %s\n", data);
+    return (0);
+}*/

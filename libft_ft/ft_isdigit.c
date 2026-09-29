@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:22:58 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/24 17:07:54 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 15:59:48 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,12 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+/*
+#include "libft.h"
+
+int main(void)
+{
+    printf("ft_isdigit('7'): %d (Esperado: != 0)\n", ft_isdigit('7'));
+    printf("ft_isdigit('a'): %d (Esperado: 0)\n", ft_isdigit('a'));
+    return (0);
+}*/

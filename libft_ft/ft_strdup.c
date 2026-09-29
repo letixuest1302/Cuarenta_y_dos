@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/28 11:07:06 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:31:32 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:07:44 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,14 @@ char	*ft_strdup(const char *s1)
 
 	return (duplicate);
 }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    char *dup = ft_strdup("Hola 42");
+    printf("ft_strdup: %s\n", dup);
+    free(dup);
+    return (0);
+}*/

@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:24:59 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:16:39 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:03:54 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char dest[20];
+    ft_memcpy(dest, "Libft42", 7);
+    dest[7] = '\0';
+    printf("ft_memcpy: %s (Esperado: Libft42)\n", dest);
+    return (0);
+}*/

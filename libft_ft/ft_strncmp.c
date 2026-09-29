@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:27:51 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:32:05 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:05:16 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,11 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 	else
 		return (0);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    printf("ft_strncmp: %d (Esperado: 0)\n", ft_strncmp("abc", "abd", 2));
+    return (0);
+}*/

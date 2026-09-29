@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:26:18 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 13:29:41 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:02:20 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,11 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    printf("ft_toupper('c'): %c (Esperado: 'C')\n", ft_toupper('c'));
+    return (0);
+}*/

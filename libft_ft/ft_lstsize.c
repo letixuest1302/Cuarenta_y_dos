@@ -6,8 +6,21 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:36:10 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:16:28 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:14:58 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+unsigned int	ft_lstsize(t_list *lst)
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    t_list *lst = ft_lstnew("A");
+    lst->next = ft_lstnew("B");
+    printf("ft_lstsize: %u (Esperado: 2)\n", ft_lstsize(lst));
+    free(lst->next); free(lst);
+    return (0);
+}*/

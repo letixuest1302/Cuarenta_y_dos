@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:28:20 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:16:35 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 16:05:43 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    printf("ft_memcmp: %d\n", ft_memcmp("abc", "abd", 3));
+    return (0);
+}*/
