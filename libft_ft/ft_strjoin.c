@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:30:45 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 11:30:17 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/29 11:32:14 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		j ++;
 	}
 	joined[i + j] = '\0';
-		return (joined)
+		return (joined);
 }
