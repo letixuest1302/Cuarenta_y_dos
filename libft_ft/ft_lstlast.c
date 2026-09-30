@@ -6,12 +6,19 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:36:32 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:15:41 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/30 11:15:35 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 t_list	*ft_lstlast(t_list *lst)
+{
+    if(!lst)
+        return (NULL);
+    while (lst->next)
+        lst = lst->next;
+    return (lst);
+}
 /*
 #include <stdio.h>
 #include <stdlib.h>

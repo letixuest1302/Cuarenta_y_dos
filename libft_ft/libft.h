@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/28 11:49:10 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/30 11:01:39 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/30 11:27:32 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
-# include <unistd.h>
+# include <string.h>
 # include <stddef.h>
 
 

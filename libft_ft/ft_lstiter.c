@@ -6,12 +6,21 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:37:49 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:18:43 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/30 11:22:03 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 void	ft_lstiter(t_list *lst, void (*f)(void *))
+{
+    if (!lst || !f)
+        return;
+    while (lst)
+    {
+        f(lst->content)
+        lst = lst->next;
+    }
+}
 /*
 #include <stdio.h>
 #include <stdlib.h>
