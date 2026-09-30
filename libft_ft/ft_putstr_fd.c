@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:33:13 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:08:23 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/30 10:52:25 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,16 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	while (*s)
-		ft_putchar_fd(*(s++), fd);
+	int	i;
+
+	if (!s)
+		return;
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], fd);
+		i ++;
+	}
 }
 /*
 int main(void)

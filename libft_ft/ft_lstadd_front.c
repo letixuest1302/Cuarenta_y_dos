@@ -6,12 +6,18 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:35:49 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:14:25 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/30 11:07:31 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+    if(!lst || !new)
+        return;
+    new->next = *lst;
+    *lst = new;
+}
 /*
 #include <stdio.h>
 #include <stdlib.h>

@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/28 11:49:10 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 15:12:33 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/09/30 11:01:39 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*));
 // Estructura para listas enlazadas (Parte 3)
 typedef struct s_list
 {
-	void			*content;
+	void		*content;
 	struct s_list	*next;
 }	t_list;
 
