@@ -6,13 +6,13 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:24:39 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:03:21 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 15:31:08 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_zero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
