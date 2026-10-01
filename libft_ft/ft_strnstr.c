@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:28:36 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/01 11:19:24 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 13:17:37 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,25 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t	*big_index;
-	size_t	little_index;
+	size_t	*big_idx;
+	size_t	little_idx;
+	size_t	k;
 
-	if (little[0] == '\0')
-		return ((char *) big);	
-	big_index = 0;
-	while (big[big_index] != '\0' && big_index < len)
+	if (!big && len == 0)
+		return (NULL);
+	if (!*little)
+		return ((char *)big);
+	k = 0;
+	big_idx = &k;
+	while (big[*big_idx] && *big_idx < len)
 	{
-		little_index = 0;
-		while (neddle[little_index] != '\0' 
-			&& (big_index + needdle_index) < len
-			&& big[big_index ++ little_index] == little[little_index])
-		{
-			little_index ++;
-		}
-		if (little[little_index] == '\0')
-			return ((char *)&big[big_index]);
-		big_index ++;
+		little_idx = 0;
+		while (little[little_idx] && big[*big_idx + little_idx]
+			== little[little_idx] && (*big_idx + little_idx) < len)
+			little_idx++;
+		if (!little[little_idx])
+			return ((char *)&big[*big_idx]);
+		(*big_idx)++;
 	}
 	return (NULL);
 }
