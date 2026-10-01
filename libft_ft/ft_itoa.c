@@ -6,65 +6,58 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:32:03 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/30 12:10:18 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 11:59:56 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-    // Paso 1: Función auxiliar para contar cuántos dígitos (y el signo) tiene el número
-static int	ft_len(int num)
+static int
+	ft_nbrlen(long n)
 {
-	int	counter;
+	int	len;
 
-	if (num == 0)
-        return (1);
-    counter = 0;
-	if (num <= 0)
+	len = 0;
+	if (n <= 0)
 	{
-		counter++; // Cuenta el '-' si es negativo, o el '1' si el número es exactamente 0
-		num = -num;
+		len++;
+		n = -n;
 	}
-	while (num > 0)
+	while (n > 0)
 	{
 		n /= 10;
-		counter++;
+		len++;
 	}
-	return (counter);
+	return (len);
 }
-static void
-	ft_fill_str(char *str, long nbr, int len)
-{
-	str[len] = '\0';
-	if (nbr == 0)
-		str[0] = '0';
-	if (nbr < 0)
-	{
-		str[0] = '-';
-		nbr = -nbr;
-	}
-	while (nbr > 0)
-	{
-		len--;
-		str[len] = (nbr % 10) + '0';
-		nbr /= 10;
-	}
-}
-char	*ft_itoa(int n)
+
+char
+	*ft_itoa(int n)
 {
 	long	nbr;
 	int		len;
 	char	*str;
 
 	nbr = n;
-	len = ft_count_len(nbr);
+	len = ft_nbrlen(nbr);
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
-	ft_fill_str(str, nbr, len);
+	str[len] = '\0';
+	if (nbr < 0)
+	{
+		str[0] = '-';
+		nbr = -nbr;
+	}
+	if (nbr == 0)
+		str[0] = '0';
+	while (nbr > 0)
+	{
+		str[--len] = (nbr % 10) + '0';
+		nbr /= 10;
+	}
 	return (str);
 }
-
 /*
 #include <stdio.h>
 #include <stdlib.h>

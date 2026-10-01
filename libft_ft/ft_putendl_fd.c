@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:33:26 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:08:33 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 12:46:00 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (!s);
-		return;
-	ft_putendl_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+	if (!s || fd < 0)
+		return ;
+	write(fd, s, ft_strlen(s));
+	write(fd, "\n", 1);
 }
 /*
 int main(void)

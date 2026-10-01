@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:33:40 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/30 10:55:17 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 12:54:24 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,19 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long	nb;
-	char	c;
+	long	nbr;
 
-	nb = n;
-	if (nb < 0)
+	if (fd < 0)
+		return ;
+	nbr = n;
+	if (nbr < 0)
 	{
 		write(fd, "-", 1);
-		nb = -nb;
+		nbr = -nbr;
 	}
-	if (nb >= 10)
-		ft_putnbr_fd(nb / 10, fd);
-		
-	c = (nb % 10) + '0';
-	write(fd, &c, 1);
+	if (nbr >= 10)
+		ft_putnbr_fd(nbr / 10, fd);
+	write(fd, &"0123456789"[nbr % 10], 1);
 }
 /*
 int	main(void)

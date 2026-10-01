@@ -6,17 +6,18 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:37:16 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/30 11:18:02 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 12:33:59 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-    if (!lst || !del)
-        return;
-    del (lst->content);
-    free (lst);
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free(lst);
 }
 /*
 #include <stdio.h>
