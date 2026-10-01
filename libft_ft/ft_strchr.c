@@ -6,13 +6,10 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:26:54 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:04:34 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 11:05:03 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-/*escibe una cadena de texto (s) y un carácter que quiere buscar (c).
-Aunque c se pasa como un número entero (int), representa un carácter ASCII.*/
 #include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
@@ -38,4 +35,3 @@ int main(void)
     printf("ft_strchr: %s (Esperado: rigor)\n", ft_strchr("rigor", 'r'));
     return (0);
 }*/
-

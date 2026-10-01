@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:31:10 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/30 11:52:10 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 11:23:33 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub = (char *)malloc(sizeof(char) * (len + 1));
 	if (!sub)
 		return (NULL);
-		
 	count = 0;
 	while (count < len)
 	{
@@ -49,9 +48,3 @@ int main(void)
     free(sub);
     return (0);
 }*/
-
-0 1 2 3 4 5 6
-H O L A Q T A
-
-- - - - - - -
-H O L A Q T A

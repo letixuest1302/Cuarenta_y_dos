@@ -6,13 +6,13 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:25:45 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:06:52 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 11:07:54 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strcpy(char *dest, const char * src, size_t size)
+size_t	ft_strcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	src_len;

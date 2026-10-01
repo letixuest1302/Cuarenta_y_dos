@@ -6,16 +6,16 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:24:05 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:02:55 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 11:04:05 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	i;
-	
+
 	i = 0;
 	while (str[i] != '\0')
 		i ++;

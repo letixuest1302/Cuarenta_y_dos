@@ -6,42 +6,36 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:30:45 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:09:58 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 11:57:50 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char
+	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	len1;
-	size_t	len2;
 	size_t	i;
 	size_t	j;
-	char	*joined;
-	
-	if(!s1 || !s2)
+	char	*res;
+
+	if (!s1 || !s2)
 		return (NULL);
-		
-	len1 = ft_strlen(s1);
-	len2 = ft_strlen(s2);
-	joined = (char *)malloc(sizeof(char) * (len1 + len2 +1));
-	if (!joined)
+	res = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!res)
 		return (NULL);
 	i = 0;
-	while(s1[i])
+	while (s1[i])
 	{
-		joined[i] = s1[i];
-		i ++;
+		res[i] = s1[i];
+		i++;
 	}
 	j = 0;
 	while (s2[j])
-	{
-		joined[i + j] = s2[j];
-		j ++;
-	}
-	joined[i + j] = '\0';
-		return (joined);
+		res[i++] = s2[j++];
+	res[i] = '\0';
+	return (res);
 }
 /*
 #include <stdio.h>

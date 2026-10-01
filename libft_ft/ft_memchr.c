@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:28:05 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/29 16:05:28 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 11:00:46 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memchr(const void *s, int c; size_t n)
 {
-	size_t	i;
+	size_t				i;
 	const unsigned char	*ptr;
-	
+
 	ptr = (const unsigned char *)s;
 	i = 0;
 	while (i < n)
