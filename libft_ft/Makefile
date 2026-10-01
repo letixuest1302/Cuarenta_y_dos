@@ -6,7 +6,7 @@
 #    By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/24 13:22:02 by lesainz           #+#    #+#              #
-#    Updated: 2026/10/01 13:41:52 by lesainz          ###   ########.fr        #
+#    Updated: 2026/10/01 15:45:19 by lesainz          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,21 +24,21 @@ BFUNCS = ft_lstnew.c ft_lstadd_front.c ft_lstadd_back.c ft_lstsize.c \
 OBJECTS = $(FUNCS:.c=.o)
 BONUS_OBJECTS = $(BFUNCS:.c=.o)
 
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CC = cc
+CFLAGS = -Wall -Wextra -Werror 
 REM = rm -vf
-AR = ar -r
+AR = ar rcs
 
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	$(AR) $(NAME) $(OBJECTS)
 
-bonus: $(BONUS_OBJECTS)
+bonus: all $(BONUS_OBJECTS)
 	$(AR) $(NAME) $(BONUS_OBJECTS)
 
 %.o: %.c
-	$(CC) -c $(CFLAGS) $<
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(REM) $(OBJECTS) $(BONUS_OBJECTS)

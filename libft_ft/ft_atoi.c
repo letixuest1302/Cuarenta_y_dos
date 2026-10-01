@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:28:52 by lesainz           #+#    #+#             */
-/*   Updated: 2026/09/28 12:15:38 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 15:52:46 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int	ft_atoi(const char *str)
 	sum = 0;
 	sign = 1;
 	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
-		++i;
-	while (str[i] == '-' || str[i] == '+')
+		i++;
+	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
 			sign *= -1;
@@ -34,7 +34,7 @@ int	ft_atoi(const char *str)
 		sum = (sum * 10) + (str[i] - '0');
 		i++;
 	}
-	return (sign * sum);
+	return (sum * sign);
 }
 
 /*
