@@ -6,14 +6,13 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:32:03 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/01 11:59:56 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 13:51:41 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int
-	ft_nbrlen(long n)
+static int	ft_nbrlen(long n)
 {
 	int	len;
 
@@ -31,8 +30,7 @@ static int
 	return (len);
 }
 
-char
-	*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	long	nbr;
 	int		len;
