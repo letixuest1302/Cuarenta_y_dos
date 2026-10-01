@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:24:22 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/01 10:35:28 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 15:23:17 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memset(void *b, int c, size_t len)
 		ptr[i] = (unsigned char)c;
 		i ++;
 	}
-	return (ptr);
+	return (b);
 }
 /*
 #include <stdio.h>

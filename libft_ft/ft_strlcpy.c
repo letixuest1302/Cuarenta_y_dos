@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:25:45 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/01 13:37:38 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 15:26:43 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 size_t	ft_strcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	src_len;
+	size_t	lonsrc;
 
-	src_len = 0;
-	while (src[src_len] != '\0')
-		src_len ++;
+	lonsrc = 0;
+	while (src[lonsrc] != '\0')
+		lonsrc ++;
 	if (size == 0)
-		return (src_len);
+		return (lonsrc);
 	i = 0;
 	while (src[i] != '\0' && i < (size - 1))
 	{
@@ -29,7 +29,7 @@ size_t	ft_strcpy(char *dest, const char *src, size_t size)
 		i ++;
 	}
 	dest[i] = '\0';
-	return (src_len);
+	return (lonsrc);
 }
 /*
 #include <stdio.h>
