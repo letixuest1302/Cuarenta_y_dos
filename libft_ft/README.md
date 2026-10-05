@@ -43,7 +43,7 @@ Para compilar debes
 | | `ft_memmove` | Copia `n` bytes gestionando de forma segura **solapamientos de memoria**. |
 | | `ft_memchr` | Busca un byte específico dentro de un bloque de memoria de tamaño `n`. |
 | | `ft_memcmp` | Compara dos bloques de memoria byte a byte hasta un máximo de `n` bytes. |
-| **Conversión / Asignación** | `ft_atoi` | Convierte una cadena numérica en un `int`, ignorando espacios y gestionando signos. |
+| **Conversión y asignación** | `ft_atoi` | Convierte una cadena numérica en un `int`, ignorando espacios y gestionando signos. |
 | | `ft_calloc` | Reserva memoria dinámica con `malloc` y la **inicializa a cero** con `bzero`. |
 | | `ft_strdup` | Duplica una cadena reservando memoria mediante `malloc` y copiando su contenido. |
 
