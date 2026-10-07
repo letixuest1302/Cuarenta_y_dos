@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:31:47 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/01 12:55:23 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/07 14:43:20 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,27 +90,30 @@ char	**ft_split(char const *s, char c)
 }
 /*
 #include <stdio.h>
-#include <stdlib.h>
-int main(void)
+
+int	main(void)
 {
-    char **tab = ft_split("lorem*ipsum*dolor*sit", '*');
-    printf("ft_split[1]: %s (Esperado: ipsum)\n", tab[1]);
-    
-    // Liberación
-    for (int i = 0; tab[i]; i++)
-        free(tab[i]);
-    free(tab);
-    return (0);
-}int main(void)
-{
-    char **tab = ft_split("lorem*ipsum*dolor*sit", '*');
-    printf("ft_split[1]: %s (Esperado: ipsum)\n", tab[1]);
-    
-    // Liberación
-    for (int i = 0; tab[i]; i++)
-        free(tab[i]);
-    free(tab);
-    return (0);
-}
+	char	**tab;
+	int		i;
+
+	tab = ft_split("dale*a*tu*cuerpo*alegria*macarena", '*');
+	if (!tab)
+		return (1);
+	
+	i = 0;
+	while (tab[i])
+	{
+		printf("tab[%d]: %s\n", i, tab[i]);
+		i++;
+	}
+
+	i = 0;
+	while (tab[i])
+	{
+		free(tab[i]);
+		i++;
+	}
+	free(tab);
+	return (0);
 }
 */

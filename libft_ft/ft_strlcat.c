@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:25:59 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/01 15:54:14 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/07 11:07:34 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,21 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 
 int main(void)
 {
-    char dest[20] = "Hello";
-    size_t r = ft_strlcat(dest, " 42", sizeof(dest));
-    printf("ft_strlcat: %s (Retorno: %zu)\n", dest, r);
+    char    dest[10] = "gato";
+    size_t  result;
+
+    printf("--- ANTES DE LA FUNCION ---\n");
+    printf("dest contiene: \"%s\"\n", dest);
+    printf("---------------------------\n\n");
+
+    // Llamamos a ft_strlcat intentando añadir "perro" con un tamaño total de 7
+    result = ft_strlcat(dest, "perro", 7);
+
+    printf("--- DESPUES DE LA FUNCION ---\n");
+    printf("dest ahora contiene: \"%s\"\n", dest);
+    printf("El numero que devuelve (return): %zu\n", result);
+    printf("-----------------------------\n");
+
     return (0);
+}
 }*/
