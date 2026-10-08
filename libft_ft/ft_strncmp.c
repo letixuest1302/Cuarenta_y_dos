@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:27:51 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/05 14:36:55 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 13:40:01 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 int main(void)
 {
-    printf("ft_strncmp: %d (Esperado: 0)\n", ft_strncmp("casa", "caso", 3));
+    printf("ft_strncmp: %d (Esperado: 0)\n", ft_strncmp("abc", "abd", 2));
     return (0);
 }*/

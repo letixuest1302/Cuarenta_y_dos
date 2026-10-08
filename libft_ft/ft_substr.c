@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:31:10 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/05 18:14:06 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/01 11:23:33 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,5 @@ int main(void)
     char *sub = ft_substr("Tripouille", 2, 4);
     printf("ft_substr: %s (Esperado: ipou)\n", sub);
     free(sub);
-    return (0); g
+    return (0);
 }*/
