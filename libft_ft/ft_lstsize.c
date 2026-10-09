@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:36:10 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/01 13:01:13 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/09 12:44:31 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,20 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	size;
+	int		count;
+	t_list	*list;
 
-	size = 0;
-	while (lst)
+	count = 0;
+	if (!lst)
+		return (0);
+	++count;
+	list = lst;
+	while (list -> next)
 	{
-		size++;
-		lst = lst->next;
+		++count;
+		list = list -> next;
 	}
-	return (size);
+	return (count);
 }
 /*
 #include <stdio.h>
