@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:37:16 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/01 12:33:59 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/09 12:38:11 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst || !del)
+	if (!lst)
 		return ;
-	del(lst->content);
+	if (lst -> content)
+		del(lst -> content);
 	free(lst);
+	return ;
 }
 /*
 #include <stdio.h>

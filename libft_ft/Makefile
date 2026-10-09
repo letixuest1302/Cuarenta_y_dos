@@ -6,7 +6,7 @@
 #    By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/24 13:22:02 by lesainz           #+#    #+#              #
-#    Updated: 2026/10/08 12:39:11 by lesainz          ###   ########.fr        #
+#    Updated: 2026/10/09 12:35:53 by lesainz          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,5 +42,3 @@ fclean: clean
 	$(REM) $(NAME)
 
 re: fclean all bonus
-
-.PHONY: all bonus clean fclean re

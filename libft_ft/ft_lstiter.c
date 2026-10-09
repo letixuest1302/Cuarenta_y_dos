@@ -6,7 +6,7 @@
 /*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:37:49 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/01 12:36:09 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/10/09 12:40:41 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,15 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!lst || !f)
+	if (!lst)
 		return ;
-	while (lst)
+	while (lst -> next)
 	{
-		f(lst->content);
-		lst = lst->next;
+		f(lst -> content);
+		lst = lst -> next;
 	}
+	f(lst -> content);
+	return ;
 }
 /*
 #include <stdio.h>
