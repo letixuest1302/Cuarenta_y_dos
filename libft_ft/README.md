@@ -14,7 +14,7 @@ Para compilar debes
 | `make re` | Hace una limpieza totall y vueve a compilar todo desde cero.|
 
 
-## Recursos y usos de la IA
+## Recursos 
 * **Recursos:** Páginas de Manual de C ('man'), referencias de la biblioteca estandar y seguimento estricto de La Norma. 
 * **Uso de la IA:**Se usó la AI de forma bastante intensa, como apoyo para programar las funciones, entender la lógica interna de cada función y comprobaciones de compilación. 
 
