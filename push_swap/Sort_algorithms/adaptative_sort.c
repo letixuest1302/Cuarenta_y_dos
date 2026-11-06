@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   adaptative_sort.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lesainz <lesainz@student.42madrid.com>     +#+  +:+       +#+        */
+/*   By: acornia & lesainz <acornia@student.42ma    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 15:39:15 by acornia           #+#    #+#             */
-/*   Updated: 2026/11/04 15:08:54 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/11/06 12:45:26 by acornia & l      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 static void	set_bench_info(t_bench *bench, char *strategy, char *complexity)
 {

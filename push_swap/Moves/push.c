@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   Push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lesainz <lesainz@student.42madrid.com>     +#+  +:+       +#+        */
+/*   By: acornia & lesainz <acornia@student.42ma    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:13:28 by acornia           #+#    #+#             */
-/*   Updated: 2026/11/04 15:08:58 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/11/06 12:45:54 by acornia & l      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void	pa(t_node **stack_a, t_node **stack_b, t_bench *bench)
 {
