@@ -6,7 +6,7 @@
 /*   By: acornia & lesainz <acornia@student.42ma    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 15:25:07 by acornia & l       #+#    #+#             */
-/*   Updated: 2026/11/06 12:57:45 by acornia & l      ###   ########.fr       */
+/*   Updated: 2026/11/10 10:32:31 by acornia & l      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	handle_args(int argc, char **argv, t_node **stack, t_bench *bench)
 				|| ft_strcmp(argv[start], "--medium") == 0
 				|| ft_strcmp(argv[start], "--complex") == 0
 				|| ft_strcmp(argv[start], "--adaptive") == 0)
-			&& !bench->flag)
+			&&!bench->flag)
 			bench->flag = argv[start];
 		else
 			break ;
