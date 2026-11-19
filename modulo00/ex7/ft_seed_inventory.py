@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    ft_seed_inventory.py                               :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: lesainz <lesainz@student.42madrid.com>     +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/11/12 10:55:22 by lesainz           #+#    #+#              #
-#    Updated: 2026/11/19 11:33:34 by lesainz          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 def ft_seed_inventory(seed_type: str, quantity: int, unit: str) -> None:
     capitalized_seed = seed_type.capitalize()
     
