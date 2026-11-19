@@ -3,11 +3,12 @@
 #                                                         :::      ::::::::    #
 #    ft_hello_garden.py                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lesainz <lesainz@student.42madrid.com      +#+  +:+       +#+         #
+#    By: lesainz <lesainz@student.42madrid.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/12 10:47:32 by lesainz           #+#    #+#              #
-#    Updated: 2026/11/12 10:47:36 by lesainz          ###   ########.fr        #
+#    Updated: 2026/11/19 11:46:46 by lesainz          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
+def ft_hello_garden() -> None:
+	print("Hello, Garden Community!")

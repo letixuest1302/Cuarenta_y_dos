@@ -1,13 +1,18 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    ft_garden_name.py                                  :+:      :+:    :+:    #
+#    ft_plant_age.py                                    :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lesainz <lesainz@student.42madrid.com      +#+  +:+       +#+         #
+#    By: lesainz <lesainz@student.42madrid.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/11/12 10:48:16 by lesainz           #+#    #+#              #
-#    Updated: 2026/11/12 10:48:18 by lesainz          ###   ########.fr        #
+#    Created: 2026/11/12 10:53:10 by lesainz           #+#    #+#              #
+#    Updated: 2026/11/19 11:48:20 by lesainz          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
+def ft_plant_age() -> None:
+	age = int(input("Enter plant age in days: "))
+	if age > 60:
+		print("Plant is ready to harvest!")
+	else:
+		print("Plant is not ready to harvest yet.")
