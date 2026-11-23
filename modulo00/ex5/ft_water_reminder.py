@@ -1,6 +1,6 @@
 def ft_water_reminder() -> None:
-    moisture = int(input("Enter soil moisture level: "))
-    if moisture < 30:
-        print("Time to water the plants!")
+    moisture = int(input("Days since last watering: "))
+    if moisture > 2:
+        print("Water the plants!")
     else:
-        print("Soil moisture is sufficient.")
+        print("Plants are fine")

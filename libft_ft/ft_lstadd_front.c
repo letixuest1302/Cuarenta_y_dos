@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lesainz <lesainz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: lesainz <lesainz@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 15:35:49 by lesainz           #+#    #+#             */
-/*   Updated: 2026/10/09 12:38:45 by lesainz          ###   ########.fr       */
+/*   Updated: 2026/11/19 14:42:23 by lesainz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,6 @@ int main(void)
     free(lst); free(new);
     return (0);
 }*/
+
+
+	
